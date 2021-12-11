@@ -1,0 +1,628 @@
+{
+	"id": "cbac5cfa-aaf9-4975-b456-c7cf6c69c5be",
+	"name": "pratical_task_edexa",
+	"description": "Practical Task",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"2739ec91-5fd4-4d82-9324-405a0b09548d",
+		"80312ed1-b4dc-488b-952b-edd010b7781c",
+		"689d5f22-886d-42c1-b306-d8d7d9a6809f",
+		"039795a1-2c2d-4e17-8699-86c989755439",
+		"e7df1fff-d96d-43d9-8207-b4d2ce9ce576",
+		"40c7a056-60c3-490f-a11e-71f70ff44746",
+		"6ceb1cd6-657c-4b84-8d83-7912e9c188af",
+		"9ff1a947-260a-4897-9a2c-9ea73a8395e4",
+		"8c95a8dd-46e0-4624-999b-238bb85440a0"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "039795a1-2c2d-4e17-8699-86c989755439",
+			"name": "Fetch Specific Users Data",
+			"url": "http://127.0.0.1:3090/user/61b41fc098fecab1b96b2d68",
+			"description": "Fetch Specific Users Data. it will give output if user has permission to access specific user data.",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr6@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "hr6",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2739ec91-5fd4-4d82-9324-405a0b09548d",
+			"name": "Create User with Role",
+			"url": "http://127.0.0.1:3090/signup",
+			"description": "Create User with Role\nRole must be from below\n\"hr\", \"manager\", \"teamLead\", \"employee\"",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr1@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "hr1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "hr",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "40c7a056-60c3-490f-a11e-71f70ff44746",
+			"name": "Edit User Data",
+			"url": "http://127.0.0.1:3090/user/61b4202f98fecab1b96b2d74",
+			"description": "Edit User Data if user has permission to update it",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr6@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "hr6",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "role",
+					"value": "employee",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "x-access-token",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "689d5f22-886d-42c1-b306-d8d7d9a6809f",
+			"name": "Fetch All Users Data",
+			"url": "http://127.0.0.1:3090/users",
+			"description": "Fetch All Users Data. it will give output if user has permission to access all users.",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr5@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "hr5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "hr",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6ceb1cd6-657c-4b84-8d83-7912e9c188af",
+			"name": "Edit User Permission",
+			"url": "http://127.0.0.1:3090/permission/61b4202f98fecab1b96b2d74",
+			"description": "Edit User Permission if user has permission to update it",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr6@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "hr6",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "role",
+					"value": "hr",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "permission",
+					"value": "createAny",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permission",
+					"value": "updateAny",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "x-access-token",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "80312ed1-b4dc-488b-952b-edd010b7781c",
+			"name": "Login into user",
+			"url": "http://127.0.0.1:3090/login",
+			"description": "Login into User",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr1@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "hr1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "",
+					"type": "text",
+					"value": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c95a8dd-46e0-4624-999b-238bb85440a0",
+			"name": "Delete User",
+			"url": "http://127.0.0.1:3090/user/61b42d69c402eec94ce72d78",
+			"description": "Delete User if user has permission to delete it",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "x-access-token",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "",
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9ff1a947-260a-4897-9a2c-9ea73a8395e4",
+			"name": "Revoke User Permission",
+			"url": "http://127.0.0.1:3090/permissionRevoke/61b4202f98fecab1b96b2d74",
+			"description": "Revoke User Permission if user has permission to revoke it",
+			"data": [
+				{
+					"key": "email",
+					"value": "hr6@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "hr6",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "role",
+					"value": "hr",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "permission",
+					"value": "createAny",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permission",
+					"value": "updateAny",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "x-access-token",
+					"type": "text",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e7df1fff-d96d-43d9-8207-b4d2ce9ce576",
+			"name": "Create User with Role by other user",
+			"url": "http://127.0.0.1:3090/create/user",
+			"description": "Create User with Role\nRole must be from below\n\"hr\", \"manager\", \"teamLead\", \"employee\"",
+			"data": [
+				{
+					"key": "email",
+					"value": "emp1@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "emp1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "role",
+					"value": "employee",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"equals": true,
+					"description": null,
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWI0MmQyOWM0MDJlZWM5NGNlNzJkNmMiLCJpYXQiOjE2MzkxOTgwMDksImV4cCI6MTYzOTI4NDQwOX0.mk2AMVV6CuZGK9aVkeq0F107OzUqmswp0lvRoRbH-3g\n",
+			"pathVariables": {}
+		}
+	]
+}
